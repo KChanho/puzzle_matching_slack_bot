@@ -1,0 +1,190 @@
+{
+  "title": {
+    "type": "plain_text",
+    "text": "퍼즈리 매칭 등록"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "제출하기"
+  },
+  "blocks": [
+    {
+      "type": "input",
+      "block_id": "name_block",
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "name_action",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "e.g. 김부캠_T1234"
+        }
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "이름"
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "location_block",
+      "element": {
+        "type": "multi_static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select an item",
+          "emoji": true
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "서울-강북",
+              "emoji": true
+            },
+            "value": "서울-강북"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "서울-강남",
+              "emoji": true
+            },
+            "value": "서울-강남"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "경기도",
+              "emoji": true
+            },
+            "value": "경기도"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "인천",
+              "emoji": true
+            },
+            "value": "인천"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "대전/충청/세종",
+              "emoji": true
+            },
+            "value": "대전/충청/세종"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "대구/경북/울산",
+              "emoji": true
+            },
+            "value": "대구/경북/울산"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "부산/경남",
+              "emoji": true
+            },
+            "value": "부산/경남"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "광주/전라",
+              "emoji": true
+            },
+            "value": "광주/전라"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "강원도",
+              "emoji": true
+            },
+            "value": "강원도"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "제주도",
+              "emoji": true
+            },
+            "value": "제주도"
+          }
+        ],
+        "action_id": "location_action"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "선호 지역 (중복 허용)",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "date_block",
+      "element": {
+        "type": "multi_static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select an item",
+          "emoji": true
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "2022.12.28",
+              "emoji": true
+            },
+            "value": "20221228"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "2022.12.29",
+              "emoji": true
+            },
+            "value": "20221229"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "2022.12.30",
+              "emoji": true
+            },
+            "value": "20221230"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "2022.12.31",
+              "emoji": true
+            },
+            "value": "20221231"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "2023.01.01",
+              "emoji": true
+            },
+            "value": "20230101"
+          }
+        ],
+        "action_id": "date_action"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "날짜 (중복 허용)",
+        "emoji": true
+      }
+    }
+  ],
+  "callback_id": "open_view",
+  "type": "modal"
+}

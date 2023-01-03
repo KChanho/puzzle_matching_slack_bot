@@ -1,0 +1,30 @@
+{
+  "title": {
+    "type": "plain_text",
+    "text": "퍼즈리 매칭 취소"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "제출하기"
+  },
+  "blocks": [
+    {
+      "type": "input",
+      "block_id": "name_block",
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "name_action",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "e.g. 김부캠_T1234"
+        }
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "매칭 취소를 위해 이름을 입력해주세요. \n(해당 이름으로 등록된 매칭이 모두 취소됩니다.)"
+      }
+    }
+  ],
+  "callback_id": "close_view",
+  "type": "modal"
+}
